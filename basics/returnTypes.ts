@@ -22,7 +22,13 @@ let combineNums: (a: number, b: number) => number;
 combineNums = add;
 
 
-// allows for callback to be a defined function type
+/*
+
+Allows for callback to be a defined function type.
+If callback returns something doesn't flag unless you use the return value for something.
+Callback parameters are enforced.
+
+*/
 function addAndHandle (n1: number, n2: number, cb: (num: number) => void) {
   const result = n1 + n2;
   cb(result);
