@@ -1,7 +1,5 @@
-function combine (n1: number, n2: number) {
+export function combineNumsOnly (n1: number, n2: number) {
   const result = n1 + n2;
-  console.log(result);
+  console.log('CombineNumsOnly', result);
   return result;
 };
-
-export default combine;
