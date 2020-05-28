@@ -1,4 +1,8 @@
-function combineNumOrString (input1: number | string, input2: number | string, resultType: 'as-number' | 'as-string'): number | string {
+// type alias for input1 and input2
+type NumString = number | string;
+type Conversion = 'as-number' | 'as-string';
+
+function combineNumOrString (input1: NumString, input2: NumString, resultType: Conversion): NumString {
   let result;
 
   if (typeof input1 === 'number' && typeof input2 === 'number' || resultType === 'as-number') {
